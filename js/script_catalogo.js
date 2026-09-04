@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardDiv = document.createElement('div');
 
         cardDiv.innerHTML = `
-                    <a href="info-livros.html"
+                    <a href="/testeBiblioteca/html/Info-livros.html"
                     class="group flex 2xl:flex-row flex-col bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
 
                         <div class="2xl:w-2/4">

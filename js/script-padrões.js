@@ -45,20 +45,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
         nav.innerHTML = `
                 <div class="mx-auto flex items-center bg-[#2A2A2A] p-2">
-                    <img src="../img/etec.png" class="w-1/4 lg:w-1/10" >
+                    <img src="/testeBiblioteca/img/etec.png" class="w-1/4 lg:w-1/10" >
                 </div>
                 
 
                 <div class="bg-[#6B0000] shadow-md ">
                     <div class="flex ml-2 py-1 gap-4">
-                        <a href="../html/index.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
-                            <img src="../img/icones-02.svg" alt="Página Inicial" class="w-6 h-6">
+                        <a href="/testeBiblioteca/index.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
+                            <img src="/testeBiblioteca/img/icones-02.svg" alt="Página Inicial" class="w-6 h-6">
                         </a>
-                        <a href="../html/sobre.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
-                            <img src="../img/icones-01.svg" alt="Sobre Nós" class="w-6 h-6">
+                        <a href="/testeBiblioteca/html/sobre.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
+                            <img src="/testeBiblioteca/img/icones-01.svg" alt="Sobre Nós" class="w-6 h-6">
                         </a>
-                        <a href="../html/catalogo.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
-                            <img src="../img/icones-03.svg" alt="Catálogo" class="w-6 h-6">
+                        <a href="/testeBiblioteca/html/catalogo.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
+                            <img src="/testeBiblioteca/img/icones-03.svg" alt="Catálogo" class="w-6 h-6">
                         </a>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
 
                         <div class="flex-1 flex justify-center md:justify-end items-center mt-6 md:mt-0">
-                            <img src="../img/images-removebg-preview.png">
+                            <img src="/testeBiblioteca/img/images-removebg-preview.png">
                         </div>
 
                     </div>
