@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "flex-none w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 px-2";
 
             card.innerHTML = `
-                <a href="../html/info-livros.html"
+                <a href="/testeBiblioteca/html/Info-livros.html"
                     class="block w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
 
                         <!-- Imagem -->
