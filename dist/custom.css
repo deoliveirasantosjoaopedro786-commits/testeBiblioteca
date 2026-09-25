@@ -1,0 +1,74 @@
+
+.livro-scroll-canvas {
+    display: block;
+    width: 112px;
+    height: 48px;
+    flex: 0 0 112px;
+    cursor:pointer;
+    image-rendering: pixelated;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .livro-scroll-canvas {
+        opacity: .8;
+    }
+}
+
+@media (max-width: 480px) {
+    .livro-scroll-canvas {
+        width: 88px;
+        flex-basis: 88px;
+    }
+}
+
+/* Regras somente dos carrosseis da pagina inicial. */
+.biblioteca-swiper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 639px) {
+    .biblioteca-swiper .swiper-button-prev,
+    .biblioteca-swiper .swiper-button-next {
+        display: none !important;
+    }
+}
+
+@keyframes scroll-infinito {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-20%);
+    }
+}
+
+.animate-scroll-infinito {
+    animation: scroll-infinito 1300s linear infinite;
+}
+/*
+.animate-scroll-infinito:hover {
+    animation-play-state: paused;
+}*/
+
+.card-livro {
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+/* Todos ficam um pouco menores */
+/*
+.animate-scroll-infinito:hover .card-livro {
+    transform: scale(0.9);
+}
+
+/* O card selecionado cresce */
+/*
+.animate-scroll-infinito .card-livro:hover {
+    transform: scale(1.2);
+    margin-left: 15px;
+    margin-right: 15px;
+    z-index: 10;
+}
+*/
