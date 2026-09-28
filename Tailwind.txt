@@ -1,4 +1,4 @@
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -- npm run tailwind
+npm run tailwind
 
 
 //comandos git

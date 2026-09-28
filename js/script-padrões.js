@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
         nav.innerHTML = `
                 <div class="w-full mx-auto flex items-center bg-[#2A2A2A] p-2 ">
-                    <img src="../img/etec.png" class="w-1/3 lg:w-1/10 ml-5" >
+                    <img src="../img/etec.png" class="w-1/3 lg:w-1/10 m-4" >
                 </div>
                 
 

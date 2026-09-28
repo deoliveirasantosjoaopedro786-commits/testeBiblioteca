@@ -1,4 +1,10 @@
 import livrosRecente from '../Banco.js';
+
+function IDs(card) {
+    localStorage.setItem('livroID', card.id);
+}
+window.IDs = IDs;
+
 document.addEventListener('DOMContentLoaded', () => { 
     const Box = document.getElementById('gridLivros');
     const paginacao = document.querySelector('.paginacao');
@@ -16,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
 
         // Renderiza os itens na lista HTML
-        Box.innerHTML = itensPagina.map(item => `<a href="info-livros.html"
+        Box.innerHTML = itensPagina.map(item => `<a href="info-livros.html" id="${item.id}" onclick="IDs(this)"
                     class="box-content group flex flex-col bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
 
                         <div class="aspect-3/2">
@@ -49,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                         </div>
 
-                    </a>`).join(""); 
+                    </a>`).join("");
 
         
     
