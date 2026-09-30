@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
 
                 <!-- Estatísticas -->
-                <div class="grid grid-cols-4 text-center py-3 text-sm">
+                <div class="grid 2xl:grid-cols-4 grid-rows-2 text-center py-3 text-sm">
                     <div>Exemplares: 10</div>
                     <div>Emprestados: 3</div>
                     <div>Reservados: 1</div>

@@ -1,5 +1,4 @@
 
-
 document.addEventListener('DOMContentLoaded', () => {
 
     const nav = document.getElementById("navBar");
@@ -7,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const pesquisaButton = document.querySelectorAll(".PesquisaButton");
     const linhaD = document.querySelectorAll(".linhaDireita");
     const linhaE = document.querySelectorAll(".linhaEsquerda");
-
-    
     // criando
     linhaD.forEach(linhaD => {
         linhaD.innerHTML = `
@@ -53,22 +50,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div id="navVermelho" class="bg-[#6B0000] shadow-md" >
                     <div class="flex items-center justify-between gap-4 px-2 p-1">
                         <div class="flex ml-0 py-1 gap-4">
-                        <a href="../html/index.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
-                            <img src="../img/icones-02.svg" alt="Página Inicial" class="w-6 h-6">
-                        </a>
-                        <a href="../html/sobre.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
-                            <img src="../img/icones-01.svg" alt="Sobre Nós" class="w-6 h-6">
-                        </a>
-                        <a href="../html/catalogo.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
-                            <img src="../img/icones-03.svg" alt="Catálogo" class="w-6 h-6">
-                        </a>
+                            <a class="arrow hidden p-2 rounded hover:bg-red-900 transition duration-300" href="javascript:history.back()">
+                                <img class="scale-x-[-1] w-6 h-6" src="https://cdn-icons-png.flaticon.com/512/724/724954.png">
+                                
+                            </a>
+                            
+                            
+                            <a href="../html/index.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
+                                <img src="../img/icones-02.svg" alt="Página Inicial" class="w-6 h-6">
+                            </a>
+                            <a href="https://www.etecdeembu.com.br/sobre-a-instituicao/index.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
+                                <img src="../img/icones-01.svg" alt="Sobre Nós" class="w-6 h-6">
+                            </a>
+                            <a href="../html/catalogo.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
+                                <img src="../img/icones-03.svg" alt="Catálogo" class="w-6 h-6">
+                            </a>
+
                         </div>
+
                         <a href="#">
                         <canvas id="livroScrollCanvas" class="livro-scroll-canvas" width="112" height="48" aria-label="Livro animado conforme a rolagem da página"></canvas>
                         </a>
                     </div>
                 </div>
              `;
+
+    const arrow = document.querySelector(".arrow");
+    if (window.location.pathname.endsWith("Info-livros.html")) {
+        arrow.classList.remove("hidden");
+    }
 
     
     
@@ -113,6 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 <div class="bg-[#6B0000] w-full h-8 flex"></div>`;
                 
+        
+
         const navVermelho = document.querySelector("#navVermelho");
         const navVerPosição = navVermelho.offsetTop;
         const livroCanvas = document.querySelector("#livroScrollCanvas");
