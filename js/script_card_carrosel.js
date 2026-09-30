@@ -1,4 +1,4 @@
-import livrosRecente from '../Banco.js';
+import livrosRecente from '/testeBiblioteca/Banco.js';
 
 function IDs(card) {
   const ID = card.id;
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const slides = livrosDoCarrossel.map((livro) => `
       <article class="swiper-slide h-[540px] py-6" style="width: 280px">
-        <a href="../html/Info-livros.html" id="${livro.id}" onclick="IDs(this)"
+        <a href="/testeBiblioteca/html/Info-livros.html" id="${livro.id}" onclick="IDs(this)"
           class="block h-full w-[280px] max-w-full mx-auto bg-white border border-gray-200 rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-105">
           
           <div class="rounded-xl p-4 sm:p-6 flex justify-center items-center">

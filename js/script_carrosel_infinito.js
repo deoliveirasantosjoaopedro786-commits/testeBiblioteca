@@ -1,4 +1,4 @@
-import livrosRecente from '../Banco.js';
+import livrosRecente from '/testeBiblioteca/Banco.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 

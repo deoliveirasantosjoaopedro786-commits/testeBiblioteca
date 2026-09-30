@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
         nav.innerHTML = `
                 <div class="w-full mx-auto flex items-center bg-[#2A2A2A] p-2 ">
-                    <img src="../img/etec.png" class="w-1/3 lg:w-1/10 m-4" >
+                    <img src="/testeBiblioteca/img/etec.png" class="w-1/3 lg:w-1/10 m-4" >
                 </div>
                 
 
@@ -56,14 +56,14 @@ document.addEventListener('DOMContentLoaded', () => {
                             </a>
                             
                             
-                            <a href="../html/index.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
-                                <img src="../img/icones-02.svg" alt="Página Inicial" class="w-6 h-6">
+                            <a href="/testeBiblioteca/html/index.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
+                                <img src="/testeBiblioteca/img/icones-02.svg" alt="Página Inicial" class="w-6 h-6">
                             </a>
                             <a href="https://www.etecdeembu.com.br/sobre-a-instituicao/index.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
-                                <img src="../img/icones-01.svg" alt="Sobre Nós" class="w-6 h-6">
+                                <img src="/testeBiblioteca/img/icones-01.svg" alt="Sobre Nós" class="w-6 h-6">
                             </a>
-                            <a href="../html/catalogo.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
-                                <img src="../img/icones-03.svg" alt="Catálogo" class="w-6 h-6">
+                            <a href="/testeBiblioteca/html/catalogo.html" class="p-2 rounded hover:bg-red-900 transition duration-300">
+                                <img src="/testeBiblioteca/img/icones-03.svg" alt="Catálogo" class="w-6 h-6">
                             </a>
 
                         </div>
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
 
                         <div class="flex-1 flex justify-center md:justify-end items-center mt-6 md:mt-0">
-                            <img src="../img/images-removebg-preview.png">
+                            <img src="/testeBiblioteca/img/images-removebg-preview.png">
                         </div>
 
                     </div>
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const livroContexto = livroCanvas.getContext("2d");
             const livroQuadros = Array.from({ length: 34 }, (_, indice) => {
             const imagem = new Image();
-            imagem.src = `../img/sprites/sprites/sprite_${indice + 1}.png`;
+            imagem.src = `/testeBiblioteca/img/sprites/sprites/sprite_${indice + 1}.png`;
             imagem.addEventListener("load", desenharLivro);
             return imagem;
         });

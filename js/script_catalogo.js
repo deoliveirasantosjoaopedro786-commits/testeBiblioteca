@@ -1,4 +1,4 @@
-import livrosRecente from '../Banco.js';
+import livrosRecente from '/testeBiblioteca/Banco.js';
 
 function IDs(card) {
     localStorage.setItem('livroID', card.id);
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
 
         // Renderiza os itens na lista HTML
-        Box.innerHTML = itensPagina.map(item => `<a href="Info-livros.html" id="${item.id}" onclick="IDs(this)"
+        Box.innerHTML = itensPagina.map(item => `<a href="/testeBiblioteca/html/Info-livros.html" id="${item.id}" onclick="IDs(this)"
                     class="box-content group flex flex-col bg-white rounded-2xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
 
                         <div class="aspect-3/2">
