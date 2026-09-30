@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="overflow-x-hidden">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/testeBiblioteca/dist/output.css" rel="stylesheet">
+        <link rel="stylesheet" href="/testeBiblioteca/dist/custom.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.css">
+
+
+        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <script src="https://unpkg.com/aos@next/dist/aos.js" defer ></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                AOS.init({
+                    duration: 1000,
+                    once: true,
+                });
+            });
+        </script>
+
+        <title>Catálogo da Biblioteca da Etec</title>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@14/swiper-bundle.min.js" defer></script>
+        <script src="/testeBiblioteca/js/script_card_carrosel.js" type="module" defer></script>
+
+        <script src="/testeBiblioteca/js/script-padrões.js" defer></script>
+
+        <script src="/testeBiblioteca/js/script_carrosel_infinito.js" type="module" defer></script>
+    </head>
+    <body class="m-0 overflow-x-hidden">
+
+        <header>
+            <nav id="navBar" aria-label="Navegação principal"></nav>
+        </header>
+
+        <main>
+            <section aria-labelledby="titulo-principal" data-aos="fade-down" class="contaniner text-center grid gap-4 mt-10 mx-auto">
+                <h1 id="titulo-principal" class="text-2xl text-[#5D003E]">Lorem Ipsum</h1>
+                <h2 class="text-3xl text-[#AD0E0A]">Lorem Ipsum dolor</h2>
+                <p class="p-2">Lorem ipsum dolor sit amet consectetur. Vivamus porta varius at curabitur.</p>
+            </section>
+
+            <section aria-label="Pesquisa no catálogo">
+                <div data-aos="fade-up" class="max-w-3xl mx-auto mt-10 p-4 PesquisaButton"></div>
+            </section>
+
+            <section id="container-imagens" aria-label="Carrosséis de livros"></section>
+
+            <nav aria-label="Acesso ao catálogo completo" class="flex justify-end p-10">
+                <a href="/testeBiblioteca/html/catalogo.html" class="px-5 py-2 bg-[#AD0E0A] text-white rounded-md font-medium">
+                    Ver Todo Catálogo
+                </a>
+            </nav>
+        </main>
+
+        <footer class="w-full font-sans" id="rodape"></footer>
+    </body>
+</html>
